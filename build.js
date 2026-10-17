@@ -43,4 +43,10 @@ ${js}
 </html>
 `;
 fs.writeFileSync('index.html', html);
+// Vercel serves the public/ folder
+fs.mkdirSync('public', { recursive: true });
+fs.writeFileSync('public/index.html', html);
+// Vercel serves the public/ folder
+fs.mkdirSync('public', { recursive: true });
+fs.writeFileSync('public/index.html', html);
 console.log('Built index.html', (html.length / 1024 / 1024).toFixed(2) + ' MB', Object.keys(assets).length + ' images');

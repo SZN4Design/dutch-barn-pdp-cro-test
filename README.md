@@ -76,6 +76,10 @@ npm run build
 
 React 18 loads from cdnjs, and Poppins and Oswald come from Google Fonts. Everything else is embedded in the page.
 
+### Deploying to Vercel
+
+Import the repo into Vercel and deploy with the default settings. `vercel.json` tells Vercel to run the build and serve the `public/` folder, which the build creates alongside `index.html`.
+
 ## Credits
 
 Product photography, logos, icons, the Spooky and Gobold display fonts, and product copy belong to Dutch Barn Vodka. They're used here only to present this design test. This prototype isn't affiliated with or published by Dutch Barn, and its cart is simulated.
